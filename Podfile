@@ -1,22 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'ComtradeGramFinal' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+target 'CustomLocationPicker' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
 
-  # Pods for ComtradeGramFinal
+  # Pods for CustomLocationPicker
+  source 'https://github.com/CocoaPods/Specs.git'
 
-  pod 'SwiftInstagram', '~> 1.1.0'
-
-  target 'ComtradeGramFinalTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ComtradeGramFinalUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 end
